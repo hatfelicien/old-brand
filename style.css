@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: black;
+  background-color: #0A0909;
   color: white;
 }
 #top{
@@ -70,4 +70,27 @@ span{
 .icons i:hover{
   font-size: 50px;
   color:#005191;
+}
+
+/*about*/
+#about{
+  margin-top: 50px;
+  padding: 80px 0;
+  color: white;
+}
+.content-holder{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.firstside{
+  flex-basis: 35%;
+}
+.firstside img{
+  width: 90%;
+  height: 500px;
+}
+.secondside{
+  flex-basis: 60%;
+  margin-top: 12%;
 }
