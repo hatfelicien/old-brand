@@ -12,8 +12,9 @@ body{
 }
 #top{
   width: 100%;
-  height: 100vh;
-  background: url(images/bodybg.png);
+  height: 650px;
+  min-height: 200px;
+  /*background: url(images/bodybg.png);*/
   background-size: cover;
   background-position: center;
 }
@@ -24,82 +25,146 @@ body{
 .container{
   padding: 10px 10%;
 }
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+/* navigation*/
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
 }
-nav ul li{
-  display: inline-block;
-  list-style: none;
-  margin: 10px 20px;
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
 }
-nav ul li a{
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  position: relative;
+
+.navbar-links {
+    height: 100%;
 }
-nav ul li a::after{
-  content: "";
-  width:100%;
-  height: 3px;
-  position: absolute;
-  background: #ACA6A6;
-  left: 0;
-  bottom: -6px;
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+/* end*/
 span{
   color: #ACA6A6;
 }
 .texts{
   margin-top: 20%;
-  font-size:30px;
+  font-size:15px;
 }
 .texts h1{
-  font-size: 60px;
+  font-size: 30px;
   margin-top: 20px;
 }
 .icons{
-  margin-left: 200px;
+  margin-left: 30%;
   margin-top: 20px;
 }
 .icons i{
-  font-size: 50px;
+  font-size: 30px;
   color:white;
 }
 .icons i:hover{
-  font-size: 50px;
+  font-size: 32px;
   color:#005191;
 }
 
 /*about*/
 #about{
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 80px 0;
   color: white;
-  margin-left: 200px;
+  margin-left: 20px;
 }
-.content-holder{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.firstside{
-  flex-basis: 35%;
-}
+
+
 .firstside img{
-  width: 90%;
-  height: 500px;
+  width: 300%;
+  margin: auto;
 }
-.secondside{
-  flex-basis: 60%;
-  margin-top: 12%;
+
+.secondside p{
+  font-size: 17px;
 }
-.button{
-  display: inline-flex;
-  height: 50px;
+.secondside h1{
+  font-size: 20px;
+}
+.buttons{
+  display:inline-flex;
+  height: 30px;
   background-color: #005191;
   padding: 0px;
   border: none;
@@ -107,20 +172,21 @@ span{
   border-radius: 5px;
   overflow: hidden;
   font-family: "quicksand", sans-serif;
-  font-size: 16px;
-  font-weight: 500px;
+  font-size: 6px;
+  font-weight: 100px;
   cursor: pointer;
 }
-.text,.icon{
+.text, .icon{
   display: inline-flex;
   align-items: center;
-  padding: 0 24px;
+  padding: 0 14px;
+  font-size: 30px;
   color: white;
-  height: 100%;
+
 }
 .icon{
   font-size: 1.5 em;
-  background-color: rgba(0,  0, 0, 0.5);
+  background-color: rgba(0,  0, 0, 0.3);
 }
 .buttons{
   margin-top: 20px;
@@ -128,7 +194,7 @@ span{
 /*skills*/
 .skills{
   margin-top: 50px;
-  margin-left: 200px;
+  margin-left: 10%;
 }
 .skills h1{
   font-size: 40px;
@@ -145,7 +211,7 @@ html {
 
 .grid {
   display: grid;
-  width: 114em;
+  width: 70%;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: start;
@@ -169,7 +235,6 @@ html {
 .card-img {
   display: block;
   width: 100%;
-  height: 7rem;
   object-fit: cover;
 }
 
@@ -192,12 +257,6 @@ html {
   margin-bottom: 2.5rem;
 }
 
-@media only screen and (max-width: 60em) {
-  body {
-    padding: 3rem;
-  }
-
-}
 /*portifolio*/
 .portifolio {
   position: relative;
@@ -226,15 +285,15 @@ html {
 
 .portifolio-card {
   flex: 0 0 auto;
-  width: 250px;
-  height: 450px;
+  width: 400px;
+  height: 200px;
   margin-right: 40px;
 }
 
 .portifolio-image {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -382,23 +441,11 @@ i:hover{
 }
 /*contact*/
 #contact{
-  padding: 80px 0;
   color: white;
-}
-.content-holder{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.firstside{
-  flex-basis: 35%;
-}
-.secondsidec{
-  flex-basis: 60%;
 }
 .secondsidec input[type=text], select, textarea {
   width: 100%;
-  padding: 12px;
+  padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
@@ -413,7 +460,7 @@ label {
   background-color: #005191;
   color: white;
   width: 100%;
-  padding: 12px 20px;
+  padding: 8px 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -488,4 +535,127 @@ color: #005191;
 }
 .socials .fa-brands{
   font-size: 30px;
+}
+@media only screen and (min-width: 768px){
+  #top{
+    background: url(images/bodybg.png);
+    background-size: cover;
+    background-position: center
+  }
+  .texts h1{
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  .icons{
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .content-holder{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .firstsideab{
+    flex-basis: 60%;
+  }
+  .secondsideab{
+    flex-basis: 40%;
+    margin-top: 12%;
+  }
+  .firstsideab img{
+    width: 100%;
+  }
+  .secondsideab p{
+    font-size: 30px;
+  }
+  .secondsideab h1{
+    font-size: 36px;
+  }
+  .button{
+    display: inline-flex;
+    height: 50px;
+    background-color: #005191;
+    padding: 0px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 500px;
+    cursor: pointer;
+  }
+  .text,.icon{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+
+  }
+  .icon{
+    font-size: 1.5 em;
+    background-color: rgba(0,  0, 0, 0.5);
+  }
+  .buttons{
+    margin-top: 20px;
+  }
+  #contact{
+    padding: 80px 0;
+    color: white;
+  }
+  .content-holder{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .firstside{
+    flex-basis: 35%;
+  }
+  .secondsidec{
+    flex-basis: 60%;
+  }
+  .secondsidec input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  .secondsidec input[type=submit] {
+    background-color: #005191;
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  .secondsidec input[type=submit]:hover {
+    background-color: F5F5F5;
+    color: black;
+  }
+
+  .fmcontainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+  }
+
+  .col-75 {
+    float: left;
+    width: 75%;
+  }
 }

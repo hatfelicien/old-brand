@@ -11,17 +11,28 @@
   <body>
     <div id="top">
       <div class="container">
-        <nav><img src="images/logowhite.png" class="logo">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
+        <nav>
+        <!--- try this -->
+        <nav class="navbar">
+          <div class="brand-title"><img src="images/logowhite.png" class="logo"></div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
         </nav>
+
+
+        <!-- still trying -->
         <div class="texts">
-          <p style="margin-left:200px;">Hello</p>
+          <p style="margin-left:20%;">Hello</p>
           <h1>I'm Hategekimana</h1>
           <p>I'm a software developer with strong passion for<br>
             building<span>web-applications</span>& <span>Graphic design</span><br>with great user experiences<br>
@@ -38,10 +49,10 @@
       <div id="about">
         <div class="firstdiv">
           <div class="content-holder">
-            <div class="firstside">
-              <img src="images\aboutpic.png" height="400">
+            <div class="firstsideab">
+              <img src="images\circle.png">
             </div>
-            <div class="secondside">
+            <div class="secondsideab">
             <h1>About Me</h1>
             <p>hello there! I am a web designer,
               and I’m very passionate and dedicated about to work.
@@ -144,7 +155,13 @@
         </div>
         <div class="portifolio-card">
             <div class="portifolio-image">
-                <img src="images/proj1.png" class="portifolio-thumb" alt="">
+                <img src="images/blog2.png" class="portifolio-thumb" alt="" width="400" height="200">
+                <button class="card-btn">View</button>
+            </div>
+        </div>
+        <div class="portifolio-card">
+            <div class="portifolio-image">
+                <img src="images/blog2.png" class="portifolio-thumb" alt="" width="400" height="200">
                 <button class="card-btn">View</button>
             </div>
         </div>
@@ -187,7 +204,7 @@
 
         <!--img---->
         <div class="blog-img">
-          <img alt="blog" src="images/blog1.png">
+          <img alt="blog" src="images/dev.png">
         </div>
         <!--text--->
         <div class="blog-text">
@@ -203,7 +220,7 @@
 
         <!--img---->
         <div class="blog-img">
-          <img alt="blog" src="images/blog1.png">
+          <img alt="blog" src="images/dev2.png">
         </div>
         <!--text--->
         <div class="blog-text">
@@ -211,6 +228,8 @@
           <a href="#" class="blog-title">What is an array? a beginner guide to ptthon arrays</a>
           <p>Arrays are a fundamental data structure, and an important part of most programming languages. In Python, they are containers which are able to store more than one item at the same time. Specifically, they are an ordered collection of elements with every value being of the same data type.</p>
           <a href="#">Read More</a>
+          126<i class="fa-sharp fa-solid fa-thumbs-up" style="color:black; font-size:20px;"></i>
+          126<i class="fa-solid fa-comments" style="color:black; font-size:20px;"></i>
         </div>
       </div>
     </div>
