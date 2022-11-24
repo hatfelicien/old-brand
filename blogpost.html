@@ -52,14 +52,20 @@
   <body>
     <div id="blogpg">
       <div class="container">
-        <nav><img src="images/logowhite.png" class="logo">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
+        <nav class="navbar">
+          <div class="brand-title"><img src="images/logowhite.png" class="logo"></div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
         </nav>
         <div class="blg-header">
           <h1>What is an array? a beginner guide to python arrays</h1>
@@ -68,8 +74,8 @@
           <img src="images/circle.png" alt="author-image" width="100"><p>published on 14nov 2022</p>
         </div><hr><br><br>
         <div class="blogger">
-          <div class="blg-image">
-            <img src="images/blog1.png" alt="">
+          <div class="blg-img">
+            <img src="images/blog1.png" alt="" style="width:80%">
           </div>
           <div class="blg-article">
             <p>Python is one of the most popular programming languages available today. It is widely used in many different business sectors such as programming, web development, machine learning, and data science. Given its widespread use, it's not surprising that Python has surpassed Java as the top programming language. In this article, you will learn about one of the most essential Python data structures: Python arrays.
@@ -90,20 +96,6 @@ Why Use an Array in Python?
 An array is used to store more than one value at a time. It can hold multiple values in a single variable, and also helps you reduce the overall size of the code. Arrays save time.
 </p>
           </div>
-            <div class="blg-sec">
-              <div class="hold">
-                <center>Subscribe to our news leter</center>
-                <hr>
-                <form action="">
-                  <label for="fname">Full Name</label>
-                  <input type="text" id="uname" name="username" placeholder="Your Full name..">
-
-                  <label for="lname">Email</label>
-                  <input type="text" id="pwd" name="pwd" placeholder="Your Email..">
-                  <input type="submit" value="Subscribe">
-                </form>
-              </div>
-            </div>
             </div>
           </div>
             <hr>
@@ -116,6 +108,6 @@ An array is used to store more than one value at a time. It can hold multiple va
               </form>
             </div>
         </div>
-
+  <script src="script.js"></script>
   </body>
 </html>

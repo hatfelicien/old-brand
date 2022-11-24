@@ -7,233 +7,120 @@
     <title>My-brand</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome-free-6.2.1-web\css\all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   </head>
   <body>
-    <div id="top">
-      <div class="container">
-        <nav>
-        <!--- try this -->
-        <nav class="navbar">
-          <div class="brand-title"><img src="images/logowhite.png" class="logo"></div>
-          <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </a>
-          <div class="navbar-links">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">HAtfeli designer</a>
 
+        <div class="bx bx-menu" id="menu-icon"></div>
 
-        <!-- still trying -->
-        <div class="texts">
-          <p style="margin-left:20%;">Hello</p>
-          <h1>I'm Hategekimana</h1>
-          <p>I'm a software developer with strong passion for<br>
-            building<span>web-applications</span>& <span>Graphic design</span><br>with great user experiences<br>
-          here's a bit mire about me. fe;li</p>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">blog</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <!-- still trying -->
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="images/DSC_8141.jpg" alt="">
         </div>
-        <div class="icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-      </div>
-    </div>
+        <div class="">
+
+        </div>
+        <div class="home-text">
+            <span>Hello, I'm</span>
+            <h1>Hategekimana Felicien</h1>
+            <h2>Fullstack Developer</h2>
+            <p>I’m a software developer with strong passion for building web-applications & Graphic design
+with a great user experiences
+here’s a bit more about me</p>
+        </div>
+
+    </section>
       <!--Home finished*/-->
-      <div id="about">
-        <div class="firstdiv">
-          <div class="content-holder">
-            <div class="firstsideab">
-              <img src="images\circle.png">
-            </div>
-            <div class="secondsideab">
-            <h1>About Me</h1>
-            <p>hello there! I am a web designer,
-              and I’m very passionate and dedicated about to work.
-               I have acquires skills and knowledge necessary to make your project a success!
-               I enjoy every step of design process,
-               from discussion and collaboration</p>
-               <div class="buttons">
-               <button type="button" class="button">
-                 <span class="text">Hire me!</span>
-                 <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
-               </button>
-               <button type="button" class="button">
-                 <span class="text">Download</span>
-                 <span class="icon"><i class="fa-solid fa-download"></i></span>
-               </button>
-             </div>
+      <!-- About -->
+      <section class="about" id="about">
+          <div class="heading">
+              <h2>About Me</h2>
+              <span>I'm hategekimana</span>
           </div>
-        </div>
-      </div>
-    </div>
+          <!-- About Content -->
+          <div class="about-container">
+              <div class="about-img">
+                  <img src="images/DSC_7459.jpg" alt="">
+              </div>
+              <div class="about-text">
+                  <p>hello there! I am a web designer, and I’m very passionate and dedicated about to work.
+                    I have acquires skills and knowledge necessary to make your project a success!
+                    I enjoy every step of design process, from discussion and collaboration</p>
+                  <a href="#" class="btn">Download Cv</a>
+              </div>
+          </div>
+      </section>
+
       <!-- about finished -->
       <!-- skills -->
-      <section class="skills">
-        <center><h1>My skills</h1></center>
-        <div class="froantend">
-          <h1>froantend</h1>
-      <div class="grid">
-        <div class="grid-item">
-          <div class="card">
-            <i class="fa-brands fa-html5"></i>
-            <div class="card-content">
-              <h2 class="card-header">HTML5</h2>
-            </div>
+      <!-- skills section start -->
+      <section class="skills" id="skills">
+          <div class="max-width">
+              <h2 class="title">My skills</h2>
+              <div class="skills-content">
+                  <div class="column left">
+                      <div class="text">My creative skills & experiences.</div>
+                      <p>I studied software development. I use different languages that are listed on the left side of this section</p>
+                      <a href="#">Read more</a>
+                  </div>
+                  <div class="column right">
+                      <div class="bars">
+                          <div class="info">
+                              <span>HTML</span>
+                              <span>90%</span>
+                          </div>
+                          <div class="line html"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>CSS</span>
+                              <span>60%</span>
+                          </div>
+                          <div class="line css"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>JavaScript</span>
+                              <span>80%</span>
+                          </div>
+                          <div class="line js"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>PHP</span>
+                              <span>50%</span>
+                          </div>
+                          <div class="line php"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>MySQL</span>
+                              <span>70%</span>
+                          </div>
+                          <div class="line mysql"></div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="grid-item">
-          <div class="card">
-            <i class="fa-brands fa-css3-alt"></i>
-            <div class="card-content">
-              <h2 class="card-header">CSS</h2>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="card">
-            <i class="fa-brands fa-square-js"></i>
-            <div class="card-content">
-              <h2 class="card-header">JAVASCRIPT</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="froantend">
-      <h1>Backend</h1>
-  <div class="grid">
-    <div class="grid-item">
-      <div class="card">
-        <i class="fa-brands fa-python"></i>
-        <div class="card-content">
-          <h2 class="card-header">PYTHON</h2>
-        </div>
-      </div>
-    </div>
-    <div class="grid-item">
-      <div class="card">
-        <i class="fa-brands fa-php"></i>
-        <div class="card-content">
-          <h2 class="card-header">PHP</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="froantend">
-  <h1>Backend</h1>
-<div class="grid">
-<div class="grid-item">
-  <div class="card">
-    <i class="fa-sharp fa-solid fa-database"></i>
-    <div class="card-content">
-      <h2 class="card-header">MYSQL</h2>
-    </div>
-  </div>
-</div>
-</div>
-</div></section>
+      </section>
       <!-- skills ending -->
       <!-- portifolio-->
-      <section class="portifolio">
-    <h2 class="portifolio-title">MY Portifolio</h2>
-    <button class="pre-btn"><i class="fa-solid fa-circle-arrow-right" style="padding:5px;"></i></button>
-    <button class="nxt-btn"><i class="fa-solid fa-circle-arrow-right" style="padding:5px;"></i></button>
-    <div class="portifolio-container">
-        <div class="portifolio-card">
-            <div class="portifolio-image">
-                <img src="images/proj1.png" class="portifolio-thumb" alt="">
-                <button class="card-btn">View</button>
-            </div>
-        </div>
-        <div class="portifolio-card">
-            <div class="portifolio-image">
-                <img src="images/blog2.png" class="portifolio-thumb" alt="" width="400" height="200">
-                <button class="card-btn">View</button>
-            </div>
-        </div>
-        <div class="portifolio-card">
-            <div class="portifolio-image">
-                <img src="images/blog2.png" class="portifolio-thumb" alt="" width="400" height="200">
-                <button class="card-btn">View</button>
-            </div>
-        </div>
-    </div>
-</section>
 <!-- blog-->
-<section id="blog">
-    <!--blog-heading--------------->
-    <div class="blog-heading">
-      <span>My Recent Posts</span>
-      <h3>My Blog</h3>
-    </div>
 
-
-    <!--container---------------->
-    <div class="blog-container">
-
-      <!--box-1------------->
-      <div class="blog-box">
-
-        <!--img---->
-        <div class="blog-img">
-          <img alt="blog" src="images/blog1.png">
-        </div>
-        <!--text--->
-        <div class="blog-text">
-          <span>18 november 2022 / Web Design</span>
-          <a href="#" class="blog-title">What is an array? a beginner guide to ptthon arrays</a>
-          <p>Arrays are a fundamental data structure, and an important part of most programming languages. In Python, they are containers which are able to store more than one item at the same time. Specifically, they are an ordered collection of elements with every value being of the same data type.</p>
-          <a href="#">Read More</a>
-        </div>
-
-      </div>
-
-
-
-
-      <!--box-2------------->
-      <div class="blog-box">
-
-        <!--img---->
-        <div class="blog-img">
-          <img alt="blog" src="images/dev.png">
-        </div>
-        <!--text--->
-        <div class="blog-text">
-          <span>18 november 2022 / Web Design</span>
-          <a href="#" class="blog-title">What is an array? a beginner guide to ptthon arrays</a>
-          <p>Arrays are a fundamental data structure, and an important part of most programming languages. In Python, they are containers which are able to store more than one item at the same time. Specifically, they are an ordered collection of elements with every value being of the same data type.</p>
-          <a href="#">Read More</a>
-        </div>
-
-      </div>
-      <!--box-3------------->
-      <div class="blog-box">
-
-        <!--img---->
-        <div class="blog-img">
-          <img alt="blog" src="images/dev2.png">
-        </div>
-        <!--text--->
-        <div class="blog-text">
-          <span>18 november 2022 / Web Design</span>
-          <a href="#" class="blog-title">What is an array? a beginner guide to ptthon arrays</a>
-          <p>Arrays are a fundamental data structure, and an important part of most programming languages. In Python, they are containers which are able to store more than one item at the same time. Specifically, they are an ordered collection of elements with every value being of the same data type.</p>
-          <a href="#">Read More</a>
-          126<i class="fa-sharp fa-solid fa-thumbs-up" style="color:black; font-size:20px;"></i>
-          126<i class="fa-solid fa-comments" style="color:black; font-size:20px;"></i>
-        </div>
-      </div>
-    </div>
-  </section>
   <!-- contact us page -->
   <section id="contact">
     <div id="about">
@@ -275,7 +162,8 @@ In time you want to hire me or cantact me for bussiness my door is always open f
               </div>
               <div class="row">
                 <div class="col-75">
-                  <input type="submit" id="submit"  value="send message to me!"">
+                  <input type="submit" id="submit"  value="send message to me!">
+
                 </div>
               </div>
            </div>
