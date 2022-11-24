@@ -1,23 +1,16 @@
-const productContainers = [...document.querySelectorAll('.portifolio-container')];
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
+// Sticky Navbar
+  let header = document.querySelector('header');
+  let menu = document.querySelector('#menu-icon');
+  let navbar = document.querySelector('.navbar');
 
-productContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
 
-    nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-    })
+  window.addEventListener('scroll', () => {
+      header.classList.toggle('shadow', window.scrollY > 0);
+  });
 
-    preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
-    })
-})
-
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
+  menu.onclick = () => {
+      navbar.classList.toggle('active');
+  }
+  window.onscroll = () => {
+      navbar.classList.remove('active');
+  }
