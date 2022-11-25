@@ -31,6 +31,9 @@ section {
 .heading {
   text-align: center;
 }
+p{
+  font-size: 25px;
+}
 .heading h2 {
   font-size: 30px;
 }
@@ -563,4 +566,12 @@ textarea::placeholder {
     #blog{
         padding:20px;
     }
+}
+@media(max-width:360px){
+  table {
+border-collapse: collapse;
+width: 80%;
+margin: auto;
+margin-top: 30%;
+}
 }
